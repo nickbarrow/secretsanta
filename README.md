@@ -1,5 +1,5 @@
 # secretsanta
-A little Secret Santa webapp I made for some friends.
+A little Secret Santa webapp I made for myself and mis amigos.
 
 
 # How to use:

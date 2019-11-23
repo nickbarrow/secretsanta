@@ -3,6 +3,8 @@ A little Secret Santa webapp I made for myself and mis amigos.
 
 
 # How to use:
+PHP is run clientside (on user's machine when they input their information) and adds information to SQL database for storage.
+
 db.php would need configured to match user's personal database. These changes should only need be made to db.php, as all webpages import and reference from db.php.
 
 Direct users to index.html and allow them to enter their details. Players should save secret code from sent.php, which is generated when they are added to the database. When it is time to pair players up, the user should run randomize.php like:

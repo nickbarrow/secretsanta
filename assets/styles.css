@@ -1,0 +1,112 @@
+/* Desktop CSS */
+* { font-family: 'Pacifico', cursive; }
+html { background-color: #903749; }
+
+h1 {
+  color: rgb(44, 44, 44);
+  font-family: 'Pacifico', cursive;
+  font-size: 44px;
+  font-weight: normal;
+  margin: 2px;
+}
+h2 {
+  color: rgb(44, 44, 44);
+  font-family: 'Pacifico', cursive;
+  font-size: 26px;
+  font-weight: normal;
+  margin: 2px;
+}
+h3 {
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-weight: lighter;
+  padding-top: 5px;
+}
+input {
+  font-size: 24px;
+  background-color: white;
+  border: 3px solid white;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 15px;
+  width: 90%;
+}
+input::placeholder { color: black; }
+input[type=submit] {
+  color: green;
+  font-size: 44px;
+  background-color: rgb(48, 199, 93);
+  border: 4px solid green;
+  width: 90%;
+  margin-top: 15px;
+}
+input[type=submit]:hover { 
+  color: white;
+  background-color: green; 
+  cursor: pointer; 
+}
+textarea {
+  font-size: 24px;
+  background-color: white;
+  border: 3px solid white;
+  border-radius: 5px;
+  padding: 15px;
+  width: 90%;
+}
+textarea::placeholder { color: black; }
+table {
+  width: 100%;
+}
+td {
+  padding-top: 10px;
+}
+hr {
+  border: 3px solid #c7a955;
+  border-radius: 5px;
+  width: 95%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 20px;
+  max-width: 65vw;
+  text-align: center;
+  display: block;
+  background-color: #d6cfa8;
+  border: 10px solid #c7a955;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 5px 5px 20px;
+}
+.head {
+  padding: 20px;
+}
+.code {
+  display: block;
+  margin: 0 auto;
+  width: max-content;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 80px;
+  background-color: rgb(113, 204, 113);
+  border: 5px solid green;
+  color: green;
+  font-weight: bold;
+}
+
+/* Mobile CSS */
+@media only screen and (max-width: 1080px) {
+  input { font-size: 60px; }
+  textarea { font-size: 60px; }
+  h1 { font-size: 76px; }
+  h2 { font-size: 50px; }
+  .img {
+    min-width: 90%;
+  }
+  .container {
+    max-width: 85vw;
+  }
+}

@@ -1,0 +1,35 @@
+<!-- Secret Santa (Fort Wayne Group) 2019 -->
+<!DOCTYPE html>
+<head>
+  <title>Secret Santa 2019!</title>
+  <meta charset='utf-8'>
+  <link rel="icon" href="assets/hat.png">
+  <link rel='stylesheet' href='assets/styles.css' type='text/css'>
+  <!-- Import Pacifico for 'handwriting' -->
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet"> 
+</head>
+<body>
+  <div class="container">
+    <!-- Main form which submits to sent.php -->
+    <form action='sent.php' method='POST' entype='multipart/form-data'>
+      <img class='img' src='assets/secret-santa.png'>
+      <table><tbody>
+        <tr><td>
+          <div class="name">
+            <h1>Enter your name below to be placed in the Secret Santa drawing:</h1>
+          </div>
+          <hr>
+        <tr><td>
+          <input type='text' name='name' placeholder='First and Last Name'>
+        <tr><td>
+          <h2>Optionally, give some ideas or things you like:</h2>
+        <tr><td>
+            <textarea cols=5 name='wish' placeholder='Dear Santa, I would like...'></textarea>
+        <tr><td>
+          <input type='submit' value='Send to Santa!' onclick="this.disabled=true;this.value='Mailing...';this.form.submit();">
+      </tbody></table>
+    </form>
+  </div>
+  <h3>&copy; Nick Barrow 2019</h3>
+</body>
+</html>
